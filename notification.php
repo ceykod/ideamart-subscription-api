@@ -14,6 +14,7 @@ $address = $array['subscriberId'];
 $version = $array['version'];
 $timeStamp = $array['timeStamp'];
 
+if (substr($address, 0, 3) != "tel") $address = "tel:" . $address;
 
 // Your code here
 
